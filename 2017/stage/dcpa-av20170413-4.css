@@ -855,6 +855,7 @@ html {
     line-height: normal;
   }
 
+  /* moves price to the left on shoppingCart.asp */
   #shoppingCart .admission-row.section-box-item .section-box-item-details.last-column {
     text-align: left;
   }

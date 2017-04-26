@@ -855,8 +855,19 @@ html {
     line-height: normal;
   }
 
+  /* moves price to the left on shoppingCart.asp */
   #shoppingCart .admission-row.section-box-item .section-box-item-details.last-column {
     text-align: left;
+  }
+
+  /* move donation amount to the left on shoppingCart.asp */
+  #shoppingCart .order-items .last-column {
+    text-align: left;
+  }
+
+  /* left align elements on donation amount on shoppingCart.asp*/
+  #shoppingCart .donation.section-box-item.odd {
+    padding-left: 2px;
   }
 }
 
@@ -1094,4 +1105,9 @@ body.optional-charge-page>div.bodyDetails>div>p>span {
 }
 #shoppingCart .item-total-value.section-box-detail-data {
   display: none;
+}
+
+/* aligns imput box and x on donations on shoppingCart.asp */
+#shoppingCart .donation.section-box-item.odd {
+  padding-top: 6px;
 }

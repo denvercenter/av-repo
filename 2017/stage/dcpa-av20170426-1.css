@@ -8,8 +8,17 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('https://www.denvercenter.org/Sitefinity/WebsiteTemplates/Thunder/App_Themes/dcpaMain/global/Montserrat-1.0/fonts/Montserrat-Regular.woff2') format('woff2'), url('https://www.denvercenter.org/Sitefinity/WebsiteTemplates/Thunder/App_Themes/dcpaMain/global/Montserrat-1.0/fonts/Montserrat-Regular.woff') format('woff'), url('https://www.denvercenter.org/Sitefinity/WebsiteTemplates/Thunder/App_Themes/dcpaMain/global/Montserrat-1.0/fonts/Montserrat-Regular.ttf') format('truetype'), url('https://www.denvercenter.org/Sitefinity/WebsiteTemplates/Thunder/App_Themes/dcpaMain/global/Montserrat-1.0/fonts/Montserrat-Bold.woff2') format('woff2'), url('https://www.denvercenter.org/Sitefinity/WebsiteTemplates/Thunder/App_Themes/dcpaMain/global/Montserrat-1.0/fonts/Montserrat-Bold.woff') format('woff'), url('https://www.denvercenter.org/Sitefinity/WebsiteTemplates/Thunder/App_Themes/dcpaMain/global/Montserrat-1.0/fonts/Montserrat-Bold.ttf') format('truetype')
+  src: url('/ArticleMedia/Fonts/Montserrat-Regular.woff2') format('woff2'), url('/ArticleMedia/Fonts/Montserrat-Regular.woff') format('woff'), url('/ArticleMedia/Fonts/Montserrat-Regular.ttf') format('truetype'), url('/ArticleMedia/Fonts/Montserrat-Bold.woff2') format('woff2'), url('/ArticleMedia/Fonts/Montserrat-Bold.woff') format('woff'), url('/ArticleMedia/Fonts/Montserrat-Bold.ttf') format('truetype')
 }
+
+/*https://tickets.denvercenter.org/ArticleMedia/Fonts/Montserrat-Bold.svg
+https://tickets.denvercenter.org/ArticleMedia/Fonts/Montserrat-Bold.ttf
+https://tickets.denvercenter.org/ArticleMedia/Fonts/Montserrat-Bold.woff
+https://tickets.denvercenter.org/ArticleMedia/Fonts/Montserrat-Bold.woff2
+https://tickets.denvercenter.org/ArticleMedia/Fonts/Montserrat-Regular.svg
+https://tickets.denvercenter.org/ArticleMedia/Fonts/Montserrat-Regular.ttf
+https://tickets.denvercenter.org/ArticleMedia/Fonts/Montserrat-Regular.woff
+https://tickets.denvercenter.org/ArticleMedia/Fonts/Montserrat-Regular.woff2*/
 
 a {
   color: #70C094;
@@ -855,8 +864,19 @@ html {
     line-height: normal;
   }
 
+  /* moves price to the left on shoppingCart.asp */
   #shoppingCart .admission-row.section-box-item .section-box-item-details.last-column {
     text-align: left;
+  }
+
+  /* move donation amount to the left on shoppingCart.asp */
+  #shoppingCart .order-items .last-column {
+    text-align: left;
+  }
+
+  /* left align elements on donation amount on shoppingCart.asp*/
+  #shoppingCart .donation.section-box-item.odd {
+    padding-left: 2px;
   }
 }
 
@@ -1094,4 +1114,14 @@ body.optional-charge-page>div.bodyDetails>div>p>span {
 }
 #shoppingCart .item-total-value.section-box-detail-data {
   display: none;
+}
+
+/* aligns input box on donations on shoppingCart.asp */
+#shoppingCart .donation.section-box-item.odd {
+  padding-top: 6px;
+  padding-right: 0px;
+}
+
+#shoppingCart .section-box-item-details {
+  padding-right: 0px;
 }
